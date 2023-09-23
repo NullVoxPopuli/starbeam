@@ -1,7 +1,7 @@
 import { Bench } from "tinybench";
-import * as vanilla from './vanilla';
+// import * as vanilla from './vanilla';
 import * as glimmer from './glimmer';
-import * as react from './react';
+// import * as react from './react';
 
 let output;
 export function setup() {
