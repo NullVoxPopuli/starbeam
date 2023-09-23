@@ -92,6 +92,7 @@
     "demo": "esno ./workspace/scripts/index.ts demo",
     "dev": "esno ./workspace/scripts/index.ts",
     "lint:fix": "pnpm dev lint --fix",
+    "local:postinstall": "pnpm rebuild node-pty -r",
     "prepack": "pnpm run build",
     "release": "esno ./workspace/scripts/index.ts release",
     "test:workspace:lint": "turbo run lint --output-logs errors-only --log-prefix none",
