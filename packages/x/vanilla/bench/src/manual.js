@@ -1,4 +1,4 @@
-// import * as vanilla from './vanilla';
+import * as vanilla from './vanilla';
 import * as glimmer from './glimmer';
 // import * as react from './react';
 
