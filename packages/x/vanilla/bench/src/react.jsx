@@ -1,4 +1,4 @@
-import { useReactive, useSetup } from "@starbeam/react";
+import { useReactive, setup } from "@starbeam/react";
 import { Cell } from '@starbeam/universal';
 import React from 'react';
 import * as ReactDOM from "react-dom/client";

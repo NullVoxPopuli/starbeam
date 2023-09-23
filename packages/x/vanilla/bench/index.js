@@ -12,7 +12,7 @@ async function boot() {
 
 const readiness = ['interactive', 'complete', 'ready'];
 
-console.lod('waiting for boot');
+console.log('waiting for boot');
 if (readiness.includes(document.readyState)) {
   boot();
 } else {
