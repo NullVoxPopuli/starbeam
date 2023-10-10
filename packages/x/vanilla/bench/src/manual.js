@@ -1,6 +1,6 @@
 import * as vanilla from './vanilla';
 import * as glimmer from './glimmer';
-// import * as react from './react';
+import * as react from './react';
 
 async function measured(name, fn) {
   performance.mark(`${name} start`);

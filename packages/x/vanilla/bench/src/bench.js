@@ -1,7 +1,7 @@
 import { Bench } from "tinybench";
-// import * as vanilla from './vanilla';
+import * as vanilla from './vanilla';
 import * as glimmer from './glimmer';
-// import * as react from './react';
+import * as react from './react';
 
 let output;
 export function setup() {
@@ -59,7 +59,7 @@ function replaceTarget() {
 }
 
 async function oneKElements() {
-  const rendering = new Bench({ time: 1_000 /* 1s */ });
+  const rendering = new Bench({ time: 1_000 /* 1s */ / 10 });
 
   let vanillaOneK = vanilla.oneK();
   let glimmerOneK = glimmer.oneK();
@@ -75,10 +75,10 @@ async function oneKElements() {
     beforeEach: () => replaceTarget(),
   });
 
-  // rendering.add("React", reactOneK.render, {
-  //   beforeAll: () => reactOneK.setup(), 
-  //   beforeEach: () => replaceTarget(),
-  // });
+  rendering.add("React", reactOneK.render, {
+    beforeAll: () => reactOneK.setup(), 
+    beforeEach: () => replaceTarget(),
+  });
 
   rendering.addEventListener('error', (error) => {
     console.error(error);

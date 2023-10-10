@@ -1,6 +1,6 @@
 import { env } from "./env.js";
-// import { Cell } from '@starbeam/universal';
-// import { El, Text, Fragment } from "@starbeamx/vanilla";
+import { Cell } from '@starbeam/universal';
+import { El, Text, Fragment } from "@starbeamx/vanilla";
 
 export const oneK = () => {
   let renderer;
